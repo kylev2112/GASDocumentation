@@ -2523,7 +2523,7 @@ Problems that GAS's prediction implementation is trying to solve:
 #### 4.10.1 Prediction Key
 GAS's prediction works on the concept of a `Prediction Key` which is an integer identifier that the client generates when he activates a `GameplayAbility`.
 
-* Client generates a prediction key when it activates a `GameplayAbility. This is the `Activation Prediction Key`.
+* Client generates a prediction key when it activates a `GameplayAbility`. This is the `Activation Prediction Key`.
 * Client sends this prediction key to the server with `CallServerTryActivateAbility()`.
 * Client adds this prediction key to all `GameplayEffects` that it applies while the prediction key is valid.
 * Client's prediction key falls out of scope. Further predicted effects in the same `GameplayAbility` need a new [Scoped Prediction Window](#concepts-p-windows).
